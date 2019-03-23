@@ -4,7 +4,6 @@ let left;
 let right;
 let ball;
 let font;
-let song;
 
 var winCon = 5;
 
@@ -16,13 +15,10 @@ var leftWin = 0;
 
 function preload() {
     font = loadFont("assets/ARCADE_I.TTF");
-    song = loadSound("assets/wilted_polygon.mp3")
 }
 
 function setup() {
     createCanvas(700, 400);
-
-    frameRate(120);
 
     textFont(font);
     textSize(fontsize);
@@ -84,14 +80,6 @@ function draw() {
         textSize(fontsize);
         text(left.point, width / 2 - 50, 30);
         text(right.point, width / 2 + 50, 30);
-
-        song.play();
-
-        if (key === 'm' && song.isPlaying()) {
-            song.stop();
-        } else if (key === 'm'){
-            song.start();
-        }
 
         if (ball.serve_status === true){
 
