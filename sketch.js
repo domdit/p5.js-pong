@@ -33,6 +33,9 @@ function draw() {
     background(0);
 
     if (start === false){
+        left.point = 0;
+        right.point = 0;
+
         fill(255);
 
         textSize(fontsize);
