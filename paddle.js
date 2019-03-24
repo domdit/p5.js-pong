@@ -6,7 +6,7 @@ function Paddle(side) {
     this.width = 20;
 
     this.ydir = 0;
-    this.speed = 5;
+    this.speed = 7;
 
     this.xbound = 20;
     this.ybound = 0;
